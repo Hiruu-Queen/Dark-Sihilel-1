@@ -3596,8 +3596,13 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 		GojoMdNx.sendText(m.chat,`මොකද මගේ නම කියන්නේ 😳♥️`,m)
 	}
 		break
-	case 'බඩුව': case 'බම්ඩුව': case 'baduwa': case 'baduwak': case 'බඩුවක්': {
+	case 'බඩුව': case 'බම්ඩුව': case 'baduwa': case 'baduwak': case 'බඩුවක්': case 'වේසී': case 'වේසියේ': case 'දාර බඩුව': {
 result = fs.readFileSync(`./GojoMedia/vn/බඩුව.mp3`)
+GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
+}
+		break
+	case 'owner': case 'creater': case 'sihilel': case 'hiruu': {
+result = fs.readFileSync(`./GojoMedia/vn/owner.mp3`)
 GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
 }
 break
