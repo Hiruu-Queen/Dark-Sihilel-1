@@ -244,6 +244,7 @@ const reply = (teks) => {
         if (db.data.chats[m.chat].antilink) {
         if (budy.match(`chat.whatsapp.com`)) {
 	if (budy.match(`pornhub.com`)) {
+	if (budy.match(`wa.me`)) {
         reply(`「 ANTI LINK 」\n\nYou have been detected sending a group link, sorry you will be kicked !\n\n🔥༺HIRUU༒QUEEN༻🔥`)
         if (!isBotAdmins) return reply(`I Am Not An Admin, How Could I Kick Somebody Who Send Link 😒\n\n🔥༺HIRUU༒QUEEN༻🔥`)
         let gclink = (`https://chat.whatsapp.com/`+await GojoMdNx.groupInviteCode(m.chat))
@@ -255,6 +256,7 @@ const reply = (teks) => {
         GojoMdNx.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         }
         }
+	}
 	}
 
         //auto reply 
@@ -1688,11 +1690,11 @@ break
                 if (args[0] === "on") {
                 if (db.data.chats[m.chat].antilink) return reply(`Activated\n\n🔥༺HIRUU༒QUEEN༻🔥`)
                 db.data.chats[m.chat].antilink = true
-                reply(`Antilink Active !`)
+                reply(`📌Antilink Active !`)
                 } else if (args[0] === "off") {
                 if (!db.data.chats[m.chat].antilink) return reply(`Deactivated\n\n🔥༺HIRUU༒QUEEN༻🔥`)
                 db.data.chats[m.chat].antilink = false
-                reply(`Antilink Inactive !`)
+                reply(`📌Antilink Inactive !`)
                 } else {
                  let buttons = [
                         { buttonId: 'antilink on', buttonText: { displayText: '🔮On🔮' }, type: 1 },
@@ -1778,7 +1780,7 @@ break
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 GOJO-SATORU HERE🎉 」\n\n${text}`
+                      let txt = `「 HIRUU-QUEEN HERE🎉 」\n\n${text}`
                       GojoMdNx.send5ButImg(i, txt, GojoMdNx.user.name, global.thumb, btn)
                     }
                 reply(`Successful Sending Broadcast To ${anu.length} Group(s)`)
@@ -1812,7 +1814,7 @@ break
                                     id: 'owner'
                                 }
                             }]
-                      let txt = `「 GOJO-SATORU HERE 🎉」\n\n${text}`
+                      let txt = `「 HIRUU-QUEEN HERE 🎉」\n\n${text}`
                       GojoMdNx.send5ButImg(yoi, txt, GojoMdNx.user.name, global.thumb, btn)
 		}
 		reply('Broadcast Success')
@@ -3593,6 +3595,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 	case 'hiruu': case 'sihilel': case 'සිහිලැල්': case 'හිරූ': {
 		GojoMdNx.sendText(m.chat,`මොකද මගේ නම කියන්නේ 😳♥️`,m)
 	}
+		break
+	case 'බඩුව': case 'බම්ඩුව': case 'baduwa': case 'baduwak': case 'බඩුවක්': {
+result = fs.readFileSync(`./GojoMedia/vn/බඩුව.mp3`)
+GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
+}
 break
 case 'allmenu': {
 anu = `
