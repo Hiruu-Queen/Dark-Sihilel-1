@@ -3605,6 +3605,11 @@ GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true},
 result = fs.readFileSync(`./GojoMedia/vn/owner.mp3`)
 GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
 }
+		break
+	case 'na': case 'nane': case 'nne': case 'නැ': case 'නෑ': case 'නෑනේ': case 'නැනේ': case 'නෑනෝ': case 'නැහැ': case 'නැහැනේ': case 'naha': case 'nahane': case 'nha': { 
+result = fs.readFileSync(`./GojoMedia/vn/na.mp3`)
+GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
+}
 break
 case 'allmenu': {
 anu = `
