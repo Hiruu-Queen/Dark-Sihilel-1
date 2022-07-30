@@ -3610,6 +3610,21 @@ GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true},
 result = fs.readFileSync(`./GojoMedia/vn/na.mp3`)
 GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
 }
+		break
+	case 'hi': case 'හායි': case 'hellow': case 'helo': case 'helow': {
+result = fs.readFileSync(`./GojoMedia/vn/Hi.mp3`)
+GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
+}
+		break
+	case 'mk': case 'මොකෝ කරන්නේ': case 'මොකද කරන්නේ': case 'mko karanne': case 'mokd krnne': case 'mokada karanne': {
+result = fs.readFileSync(`./GojoMedia/vn/mk.mp3`)
+GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
+}
+		break
+	case 'kichi': case 'කැපයි': case 'කිචි': case 'kiri': case 'කිරි': case 'capai': case 'matti': case 'මැට්ටි':{
+result = fs.readFileSync(`./GojoMedia/vn/kiri.mp3`)
+GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
+}
 break
 case 'allmenu': {
 anu = `
