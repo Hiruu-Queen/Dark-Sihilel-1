@@ -3596,7 +3596,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 		GojoMdNx.sendText(m.chat,`මොකද මගේ නම කියන්නේ 😳♥️`,m)
 	}
 		break
-	case 'බඩුව': case 'බම්ඩුව': case 'baduwa': case 'baduwak': case 'බඩුවක්': case 'වේසී': case 'වේසියේ': case 'දාර බඩුව': {
+	case 'කොල්ලා කවුද': case 'කොල්ලෙක් ඉන්නවද': case 'කොල්ලගේ නම මොකක්ද': {
+		GojoMdNx.sendText(m.chat,`ම්ම්ම්.....ඉන්නවා😌 සිහිලැල් 😘 මන් එයාට ගොඩක් ආදරෙයි😊🙈 love you sihilel😘😘`,m)
+	}
+		break
+	case 'බඩුව': case 'බම්ඩුව': case 'baduwa': case 'baduwak': case 'බඩුවක්': case 'වේසී': case 'වේසියේ': case 'දාර බඩුව': case 'bamduwa': case 'hukamuda': case 'හුකමුද': case 'අරිනවා තොට': case 'පුකේ': case 'puke': case 'ube ammt': case 'උබෙ අම්මට': {
 result = fs.readFileSync(`./GojoMedia/vn/බඩුව.mp3`)
 GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
 }
@@ -3623,6 +3627,46 @@ GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true},
 		break
 	case 'kichi': case 'කැපයි': case 'කිචි': case 'kiri': case 'කිරි': case 'capai': case 'matti': case 'මැට්ටි':{
 result = fs.readFileSync(`./GojoMedia/vn/kiri.mp3`)
+GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
+}
+		break
+	case 'info': case 'bot': {
+result = fs.readFileSync(`./GojoMedia/vn/info.mp3`)
+GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
+}
+		break
+	case 'gn': case 'good night': case 'සුභ රාත්‍රියක්': case 'gud night': case 'ගුඩ් නයිට්': case 'gdn8': {
+result = fs.readFileSync(`./GojoMedia/vn/gn.mp3`)
+GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
+}
+		break
+	case 'matara': case 'මාතර': case 'දකුණ': case 'dakuna': case 'දකුණේ': {
+result = fs.readFileSync(`./GojoMedia/vn/matara.mp3`)
+GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
+}
+		break
+	case 'asai': case 'ආසයි': {
+result = fs.readFileSync(`./GojoMedia/vn/asai.mp3`)
+GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
+}
+		break
+	case 'i love you': case 'මං ආදරෙයි ඔයාට': case 'i like you': case 'මං කැමතියි ඔයාට': {
+result = fs.readFileSync(`./GojoMedia/vn/මං ආදරෙයි ඔයාට.mp3`)
+GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
+}
+		break
+	case 'love': case 'ලව්': case 'ආදරෙයි': case 'කැමතියි': {
+result = fs.readFileSync(`./GojoMedia/vn/love.mp3`)
+GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
+}
+		break
+	case 'hiruu': case 'හිරූ': {
+result = fs.readFileSync(`./GojoMedia/vn/hiruu.mp3`)
+GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
+}
+		break
+	case 'hiruu s': case 'සිහිලැල්': {
+result = fs.readFileSync(`./GojoMedia/vn/hiruu s.mp3`)
 GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
 }
 break
