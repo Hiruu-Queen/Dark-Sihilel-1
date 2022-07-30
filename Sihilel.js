@@ -243,6 +243,7 @@ const reply = (teks) => {
 	  //antilink\\
         if (db.data.chats[m.chat].antilink) {
         if (budy.match(`chat.whatsapp.com`)) {
+	if (budy.match(`pornhub.com`)) {
         reply(`「 ANTI LINK 」\n\nYou have been detected sending a group link, sorry you will be kicked !\n\n🔥༺HIRUU༒QUEEN༻🔥`)
         if (!isBotAdmins) return reply(`I Am Not An Admin, How Could I Kick Somebody Who Send Link 😒\n\n🔥༺HIRUU༒QUEEN༻🔥`)
         let gclink = (`https://chat.whatsapp.com/`+await GojoMdNx.groupInviteCode(m.chat))
@@ -254,6 +255,7 @@ const reply = (teks) => {
         GojoMdNx.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         }
         }
+	}
 
         //auto reply 
         for (let anji of setik){
