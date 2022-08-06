@@ -70,7 +70,7 @@ async function startGojoMdNx() {
     GojoMdNx.ws.on('CB:call', async (json) => {
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
-    let pa7rick = await GojoMdNx.sendContact(callerId, global.owner)
+    let pa7rick = await GojoMdNx.sendMessage(callerId, global.owner)
     GojoMdNx.sendMessage(callerId, { text: `Automatic Block System!\nDon't Call Bot!\nPlease Ask Or Contact The Owner To Unblock You!`}, { quoted : pa7rick })
     await sleep(8000)
     await GojoMdNx.updateBlockStatus(callerId, "block")
