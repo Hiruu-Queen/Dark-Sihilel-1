@@ -3596,7 +3596,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 	}
 		break 
 	case '👺': case '👹': case '😉': case '😊': case '😇': case '😙': case '🥰': case '🤡': case '💩': case '☠️': case '💀': case '😈': case '😤': case '🥱': case '😫': case '😳': case '😁': case '😆': case '😅': case '🤣': case '😂': case '🙂': case '🙃': case '😄': case '⚽': case '☺️': {
-		GojoMdNx.sendText(m.chat,`👻`.m)
+		GojoMdNx.sendText(m.chat,`👻`,m)
 	}
 		break
 	case 'කොල්ලා කවුද': case 'කොල්ලෙක් ඉන්නවද': case 'කොල්ලගේ නම මොකක්ද': {
