@@ -3373,8 +3373,9 @@ break
 				     buttons: buttons,
 				     headerType: 4,
                 }
-			     break
-		    case 'listmenu': {GojoMdNx.sendMessage(from, { react: { text: `💖`, key: m.key }}) 
+break
+		    case 'listmenu': {
+			    GojoMdNx.sendMessage(from, { react: { text: `💖`, key: m.key }}) 
 		    let buttons = [
 			    {buttonId: `mainmenu`, buttonText: {displayText: 'MAIN MENU'}, type: 1},
 			    {buttonId: `ownermenu`, buttonText: {displayText: 'OWNER MENU'}, type: 1},
