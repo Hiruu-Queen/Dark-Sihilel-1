@@ -3310,7 +3310,6 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
 ││✑  😉🔥!!
 │└───────────────┈ ⳹
 │ 「𝙃𝙄𝙍𝙐𝙐 𝙌𝙐𝙀𝙀𝙉 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 👩‍💻 」
-│✙ 🔥𝐒𝐏𝐄𝐄𝐃 : ${latensie.toFixed(4)} miliseconds
 │✙ 🔥𝐑𝐔𝐍 𝐓𝐈𝐌𝐄 : ${runtime(process.uptime())}
 │✙ 🔥𝐁𝐎𝐓 𝐍𝐀𝐌𝐄 : ${global.botname}
 │✙ 🔥𝐎𝐖𝐍𝐄𝐑 𝐍𝐀𝐌𝐄 : ${global.ownername}
