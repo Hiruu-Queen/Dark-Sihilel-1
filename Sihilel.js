@@ -3373,6 +3373,8 @@ break
 				     buttons: buttons,
 				     headerType: 4,
                 }
+			     GojoMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
+	    }
 break
 		    case 'listmenu': {
 			    GojoMdNx.sendMessage(from, { react: { text: `💖`, key: m.key }}) 
@@ -3393,7 +3395,7 @@ break
 			    {buttonId: `islamicmenu`, buttonText: {displayText: 'ISLAMIC MENU'}, type: 1},
 			    {buttonId: `horoscopemenu`, buttonText: {displayText: 'HOROSCOPE MENU'}, type: 1},
 			    {buttonId: `anonymouschatmenu`, buttonText: {displayText: 'ANONYMOUS CHAT MENU'}, type: 1},
-			    {buttonId: `tqttmenu`, buttonText: {displayText: 'THANKS TO'}, type: 1},
+			    {buttonId: `tqttmenu`, buttonText: {displayText: 'THANKS TO'}, type: 1}
     ] 
 			     let buttonMessage = {
 				     image: { url: `https://telegra.ph/file/593f79c5b89b996657190.jpg` },
@@ -3401,6 +3403,8 @@ break
 				     footer: `${botname}`,
 				     buttons: buttons,
 				     headerType: 4,
+		    }
+			     GojoMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
 		    }
                 break
                 case 'command': {
@@ -3550,6 +3554,8 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 				     footer: `${botname}`,
 				     buttons: buttons, 
 				     headerType: 4,
+	}
+			     GojoMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
 	}
 		break
 	case 'hutto': case 'hutti': case 'හුත්තෝ': case 'හුත්ති': case 'පකයා': case 'පකෝ': case 'කැරියෝ': case 'පම්කෝ': case 'හුකපන්': case 'hukapan': case 'ලබ්බ': case 'පොන්නයා': case 'kimba': case 'කිම්බ': {
