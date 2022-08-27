@@ -3334,37 +3334,12 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
 𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐟𝐨𝐫 𝐮𝐬𝐢𝐧𝐠 𝐦𝐲 𝐛𝐨𝐭 🕊️♥️
 
 ©𝙷𝙸𝚁𝚄𝚄 𝚀𝚄𝙴𝙴𝙽 𝙿𝚄𝙱𝙻𝙸𝙲 𝙴𝙳𝙸𝚃𝙸𝙾𝙽`,
-                            hydratedButtons: [{
-                                urlButton: {
-                                    displayText: '😈MY WEB💯',
-                                    url: `${myweb}`
-                                }
-                            }, {
-                            	urlButton: {
-                                displayText: 'BOT GROUP🎠',
-                                    url: `${sc}`
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: '🚀All Menu🚀',
-                                    id: `${prefix}allmenu`
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: '🛸List Menu🛸',
-                                    id: `${prefix}command`
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: '🎠SIHILEL🎠',
-                                    id: `${prefix}owner`
-                                }
-                            }]
-                        }
-                    }
-                }), { userJid: m.chat })
-                GojoMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
-                }
+				     footer: `${botname}`,
+				     buttons: buttons,
+				     headerType: 4,
+			     }
+    XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })   
+		     }
 break
             case 'list': case 'menu': {
             	timestampe = speed();
