@@ -3255,6 +3255,8 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             break
             case 'owner': case 'creator': case 'sihilel': case 'hiruu': {
                 reply(`🕊️♥️𝙼𝚈 𝙾𝚆𝙽𝙴𝚁 𝙸𝚂⫸ `+global.ownername+`😉\n\nWa.me/`+global.owner+`\n\n🔥༺HIRUU༒QUEEN༻🔥`, m)
+		    result = fs.readFileSync(`./GojoMedia/vn/owner.mp3`)
+		    GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
             }
             break
 case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'neko':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
@@ -3300,7 +3302,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
 			     let buttons = [
 				     {buttonId: `menu`, buttonText: {displayText: 'MENU'}, type: 1},
 				     {buttonId: `owner`, buttonText: {displayText: 'SIHILEL'}, type: 1},
-				     {buttonId: `bot group`, buttonText: {displayText: 'BOT GROUP'}, type: 1}
+				     {buttonId: `hiruubotgp`, buttonText: {displayText: 'BOT GROUP'}, type: 1}
     ] 
 			     let buttonMessage = {
 				     image: { url: `https://telegra.ph/file/593f79c5b89b996657190.jpg` },
@@ -3541,7 +3543,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 reply(`GitHub : https://github.com/Hiruu-Queen/Dark-Sihilel\n Dont Forget To Give Star\n\nBot Group : ${sc}\nCome and join with us😈🚀\n\n🔥༺HIRUU༒QUEEN༻🔥`)
             }
 		break 
-	case 'bot group': {
+	case 'bot group': case 'botgroup': case 'hiruubotgp': {
 		GojoMdNx.sendMessage(from, { react: { text: `💖`, key: m.key }}) 
 			     let buttons = [
 				     {buttonId: `menu`, buttonText: {displayText: 'MENU'}, type: 1},
@@ -3588,11 +3590,6 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 		break
 	case 'බඩුව': case 'බම්ඩුව': case 'baduwa': case 'baduwak': case 'බඩුවක්': case 'වේසී': case 'වේසියේ': case 'දාර බඩුව': case 'bamduwa': case 'hukamuda': case 'හුකමුද': case 'අරිනවා තොට': case 'පුකේ': case 'puke': case 'ube ammt': case 'උබෙ අම්මට': {
 result = fs.readFileSync(`./GojoMedia/vn/බඩුව.mp3`)
-GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
-}
-		break
-	case 'owner': case 'creater': case 'sihilel': case 'hiruu': {
-result = fs.readFileSync(`./GojoMedia/vn/owner.mp3`)
 GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
 }
 		break
