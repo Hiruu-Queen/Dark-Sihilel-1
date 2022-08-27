@@ -3296,7 +3296,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
 	}
                     break
                      case 'alive': case 'bot': case 'hiruu bot': {
-			     XeonBotInc.sendMessage(from, { react: { text: `💖`, key: m.key }}) 
+			     GojoMdNx.sendMessage(from, { react: { text: `💖`, key: m.key }}) 
 			     let buttons = [
 				     {buttonId: `menu`, buttonText: {displayText: 'MENU'}, type: 1},
 				     {buttonId: `owner`, buttonText: {displayText: 'SIHILEL'}, type: 1}
@@ -3338,7 +3338,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
 				     buttons: buttons,
 				     headerType: 4,
 			     }
-    XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })   
+    GojoMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })   
 		     }
 break
             case 'list': case 'menu': {
