@@ -3373,8 +3373,36 @@ break
 				     buttons: buttons,
 				     headerType: 4,
                 }
+			     break
+		    case 'listmenu': {GojoMdNx.sendMessage(from, { react: { text: `💖`, key: m.key }}) 
+		    let buttons = [
+			    {buttonId: `mainmenu`, buttonText: {displayText: 'MAIN MENU'}, type: 1},
+			    {buttonId: `ownermenu`, buttonText: {displayText: 'OWNER MENU'}, type: 1},
+			    {buttonId: `groupmenu`, buttonText: {displayText: 'GROUP MENU'}, type: 1},
+			    {buttonId: `rpgmenu`, buttonText: {displayText: 'RPG MENU'}, type: 1},
+			    {buttonId: `downloadmenu`, buttonText: {displayText: 'DOWNLOAD MENU'}, type: 1},
+			    {buttonId: `searchmenu`, buttonText: {displayText: 'SEARCH MENU'}, type: 1},
+			    {buttonId: `randommenu`, buttonText: {displayText: 'RANDOM MENU'}, type: 1},
+			    {buttonId: `randomanimemenu`, buttonText: {displayText: 'RANDOM ANIME MENU'}, type: 1},
+			    {buttonId: `funmenu`, buttonText: {displayText: 'FUN MENU'}, type: 1},
+			    {buttonId: `convertmenu`, buttonText: {displayText: 'CONVERT MENU'}, type: 1},
+			    {buttonId: `databasemenu`, buttonText: {displayText: 'DATABASE MENU'}, type: 1},
+			    {buttonId: `voicechangermenu`, buttonText: {displayText: 'VOICE CHANGE MENU'}, type: 1},
+			    {buttonId: `textpromenu`, buttonText: {displayText: 'LOGO MENU'}, type: 1},
+			    {buttonId: `islamicmenu`, buttonText: {displayText: 'ISLAMIC MENU'}, type: 1},
+			    {buttonId: `horoscopemenu`, buttonText: {displayText: 'HOROSCOPE MENU'}, type: 1},
+			    {buttonId: `anonymouschatmenu`, buttonText: {displayText: 'ANONYMOUS CHAT MENU'}, type: 1},
+			    {buttonId: `tqttmenu`, buttonText: {displayText: 'THANKS TO'}, type: 1},
+    ] 
+			     let buttonMessage = {
+				     image: { url: `https://telegra.ph/file/593f79c5b89b996657190.jpg` },
+				     caption: `🔥LIST MENU OPTION🔥`,
+				     footer: `${botname}`,
+				     buttons: buttons,
+				     headerType: 4,
+		    }
                 break
-                case 'command': case 'listmenu': {
+                case 'command': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `Hi ${pushname}`,
