@@ -3295,6 +3295,8 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
 		break
 	case 'info': case 'about': {
 		GojoMdNx.sendMessage(from, { text: `Try for this!\n🔥༺HIRUU༒QUEEN༻🔥\n\nhttps://sites.google.com/view/hiruu-queen-bot/home` }, { quoted: m })
+		result = fs.readFileSync(`./GojoMedia/vn/info.mp3`)
+		GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
 	}
                     break
                      case 'alive': case 'bot': case 'hiruu bot': {
@@ -3404,7 +3406,7 @@ break
 				     caption: `🔥LIST MENU OPTION🔥`,
 				     footer: `${botname}`,
 				     buttons: buttons,
-				     headerType: 4,
+				     headerType: 18,
 		    }
 			     GojoMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })
 		    }
@@ -3610,11 +3612,6 @@ GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true},
 		break
 	case 'kichi': case 'කැපයි': case 'කිචි': case 'kiri': case 'කිරි': case 'capai': case 'matti': case 'මැට්ටි':{
 result = fs.readFileSync(`./GojoMedia/vn/kiri.mp3`)
-GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
-}
-		break
-	case 'info': case 'bot': {
-result = fs.readFileSync(`./GojoMedia/vn/info.mp3`)
 GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
 }
 		break
