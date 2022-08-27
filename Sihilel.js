@@ -3296,16 +3296,14 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
 	}
                     break
                      case 'alive': case 'bot': case 'hiruu bot': {
-                           	timestampe = speed();
-latensie = speed() - timestampe
- anu = ` `
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            hydratedContentText: anu,
-                            locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./GojoMedia/Sihilel.jpg')},
-                            hydratedFooterText: `┌─❖
+			     XeonBotInc.sendMessage(from, { react: { text: `💖`, key: m.key }}) 
+			     let buttons = [
+				     {buttonId: `menu`, buttonText: {displayText: 'MENU'}, type: 1},
+				     {buttonId: `owner`, buttonText: {displayText: 'SIHILEL'}, type: 1}
+    ] 
+			     let buttonMessage = {
+				     image: { url: `https://telegra.ph/file/593f79c5b89b996657190.jpg` },
+				     caption: `┌─❖
 │「 Hi 👋 」
 └┬❖ 「 ${pushname} 」
 ┌┤✑  You Used in Very Powerful Whatsapp Bot
