@@ -3299,7 +3299,8 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
 			     GojoMdNx.sendMessage(from, { react: { text: `💖`, key: m.key }}) 
 			     let buttons = [
 				     {buttonId: `menu`, buttonText: {displayText: 'MENU'}, type: 1},
-				     {buttonId: `owner`, buttonText: {displayText: 'SIHILEL'}, type: 1}
+				     {buttonId: `owner`, buttonText: {displayText: 'SIHILEL'}, type: 1},
+				     {buttonId: `bot group`, buttonText: {displayText: 'BOT GROUP'}, type: 1}
     ] 
 			     let buttonMessage = {
 				     image: { url: `https://telegra.ph/file/593f79c5b89b996657190.jpg` },
@@ -3340,24 +3341,22 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
     GojoMdNx.sendMessage(m.chat, buttonMessage, { quoted: m })   
 		     }
 break
-            case 'list': case 'menu': {
-            	timestampe = speed();
-latensie = speed() - timestampe
-                anu = ``
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                    templateMessage: {
-                        hydratedTemplate: {
-                            hydratedContentText: anu,
-                            locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./GojoMedia/Sihilel.jpg')}, 
-                            hydratedFooterText: `
+            case 'list': case 'menu': { 
+		    GojoMdNx.sendMessage(from, { react: { text: `💖`, key: m.key }}) 
+		    let buttons = [
+			    {buttonId: `allmenu`, buttonText: {displayText: 'ALL MENU'}, type: 1},
+			    {buttonId: `listmenu`, buttonText: {displayText: 'LIST MENU'}, type: 1},
+			    {buttonId: `donate`, buttonText: {displayText: 'DONATE'}, type: 1}
+    ] 
+			     let buttonMessage = {
+				     image: { url: `https://telegra.ph/file/593f79c5b89b996657190.jpg` },
+				     caption: `
 ┌─❖
 │「 Hi 👋 」
 └┬❖ 「 ${pushname} 」
 ┌┤✑  You Used in Very Powerful Whatsapp Bot.....🕊️
 │└───────────────┈ ⳹
 │ 「 𝙃𝙄𝙍𝙐𝙐 𝙌𝙐𝙀𝙀𝙉 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 👩‍💻 」
-│✙ 🔥𝐒𝐏𝐄𝐄𝐃 : ${latensie.toFixed(4)} miliseconds
 │✙ 🔥𝐑𝐔𝐍𝐓𝐈𝐌𝐄 : ${runtime(process.uptime())}
 │✙ 🔥𝐁𝐎𝐓 𝐆𝐑𝐎𝐔𝐏 : ${global.botname}
 │✙ 🔥𝐎𝐖𝐍𝐄𝐑 𝐍𝐀𝐌𝐄 : ${global.ownername}
@@ -3368,49 +3367,11 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 └┬──────────────┈ ⳹
   │✑  𝙷𝙸𝚁𝚄𝚄 𝚀𝚄𝙴𝙴𝙽 𝙱𝙾𝚃 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈 𝚂𝙸𝙷𝙸𝙻𝙴𝙻......🕊️♥️
  └───────────────┈ ⳹
-▣🕊️𝙼𝚞𝚕𝚝𝚒 𝙳𝚎𝚟𝚒𝚌𝚎 𝚆𝚑𝚊𝚝𝚜𝚊𝚙𝚙 𝙱𝚘𝚝
-
-𝐇𝐨𝐰 𝐂𝐚𝐧 𝐈 𝐇𝐞𝐥𝐩 𝐘𝐨𝐮....?🕊️♥️
-
-▣🕊️𝐦𝐲 𝐧𝐚𝐦𝐞 : 𝚂_𝙸_𝙷_𝙸_𝙻_𝙴_𝙻
-
-▣🕊️𝐦𝐲 𝐛𝐢𝐫𝐭𝐡𝐝𝐚𝐲 : 2006|06|12
-
-▣🕊️𝐜𝐨𝐧𝐭𝐚𝐜𝐭 𝐦𝐞 : Wa.me/+94704101989
-
-𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐟𝐨𝐫 𝐮𝐬𝐢𝐧𝐠 𝐦𝐲 𝐛𝐨𝐭 🕊️♥️
 
 ©𝙷𝙸𝚁𝚄𝚄 𝚀𝚄𝙴𝙴𝙽 𝙿𝚄𝙱𝙻𝙸𝙲 𝙴𝙳𝙸𝚃𝙸𝙾𝙽`,
-                            hydratedButtons: [{
-                                urlButton: {
-                                    displayText: '😈MY WEB💯',
-                                    url: `${myweb}`
-                                }
-                            }, {
-                            	urlButton: {
-                                displayText: 'BOT GROUP🎠',
-                                    url: `${sc}`
-                                }
-                            }, {
-                                quickReplyButton: {
-                                    displayText: '🚀All Menu🚀',
-                                    id: `${prefix}allmenu`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: '🛸List Menu🛸',
-                                    id: `${prefix}command`
-                                }
-                                }, {
-                                quickReplyButton: {
-                                    displayText: '🎠SIHILEL🎠',
-                                    id: `${prefix}owner`
-                                }
-                            }]
-                        }
-                    }
-                }), { userJid: m.chat })
-                GojoMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
+				     footer: `${botname}`,
+				     buttons: buttons,
+				     headerType: 4,
                 }
                 break
                 case 'command': case 'listmenu': {
@@ -3543,9 +3504,24 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 GojoMdNx.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/593f79c5b89b996657190.jpg' }, caption: `*Hi Bro ${m.pushName}*\nHello I am Hiruu Queen Bot.......My creater is༻Sihilel༺💯🌹\n\nDonation section is currently down🥲 , I know you are happy but me 🥲💔\n\n🔥༺HIRUU༒QUEEN༻🔥` }, { quoted: m })
             }
             break
-            case 'sc': case 'script': case 'github': case 'bot group': {
+            case 'sc': case 'script': case 'github': {
                 reply(`GitHub : https://github.com/Hiruu-Queen/Dark-Sihilel\n Dont Forget To Give Star\n\nBot Group : ${sc}\nCome and join with us😈🚀\n\n🔥༺HIRUU༒QUEEN༻🔥`)
             }
+		break 
+	case 'bot group': {
+		GojoMdNx.sendMessage(from, { react: { text: `💖`, key: m.key }}) 
+			     let buttons = [
+				     {buttonId: `menu`, buttonText: {displayText: 'MENU'}, type: 1},
+				     {buttonId: `owner`, buttonText: {displayText: 'SIHILEL'}, type: 1},
+				     {buttonId: `donate`, buttonText: {displayText: 'DONATE'}, type: 1}
+    ] 
+			     let buttonMessage = {
+				     image: { url: `https://telegra.ph/file/593f79c5b89b996657190.jpg` },
+				     caption: `HELLO FRIEND 😉\n\nDO YOU WANT JOIN OUR MAIN BOT GROUP\n\nYOU CAN CLICK THIS LINK ; ${sc}\n\n🔥༺HIRUU☬QUEEN༻🔥`,
+				     footer: `${botname}`,
+				     buttons: buttons, 
+				     headerType: 4,
+	}
 		break
 	case 'hutto': case 'hutti': case 'හුත්තෝ': case 'හුත්ති': case 'පකයා': case 'පකෝ': case 'කැරියෝ': case 'පම්කෝ': case 'හුකපන්': case 'hukapan': case 'ලබ්බ': case 'පොන්නයා': case 'kimba': case 'කිම්බ': {
 		GojoMdNx.sendText(m.chat, `කුණුහරුප කියන්න එපා හුත්තෝ 🤬😡`,m)
