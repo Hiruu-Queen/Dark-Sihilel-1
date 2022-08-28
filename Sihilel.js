@@ -3402,7 +3402,7 @@ break
 			    {buttonId: `tqttmenu`, buttonText: {displayText: 'THANKS TO'}, type: 1}
     ] 
 			     let buttonMessage = {
-				     image: { url: `https://telegra.ph/file/593f79c5b89b996657190.jpg` },
+				     image: { url: `https://telegra.ph/file/a9094b0c5a1e6584f864a.jpg` },
 				     caption: `🔥LIST MENU OPTION🔥`,
 				     footer: `${botname}`,
 				     buttons: buttons,
@@ -3553,7 +3553,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 				     {buttonId: `donate`, buttonText: {displayText: 'DONATE'}, type: 1}
     ] 
 			     let buttonMessage = {
-				     image: { url: `https://telegra.ph/file/593f79c5b89b996657190.jpg` },
+				     image: { url: `https://telegra.ph/file/f364fa4c71fdd03246cc3.jpg` },
 				     caption: `HELLO FRIEND 😉\n\nDO YOU WANT JOIN OUR MAIN BOT GROUP\n\nYOU CAN CLICK THIS LINK ; ${sc}\n\n🔥༺HIRUU☬QUEEN༻🔥`,
 				     footer: `${botname}`,
 				     buttons: buttons, 
