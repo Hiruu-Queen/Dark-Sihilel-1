@@ -3296,7 +3296,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
 	case 'info': case 'about': {
 		GojoMdNx.sendMessage(from, { text: `Try for this!\n🔥༺HIRUU༒QUEEN༻🔥\n\nhttps://sites.google.com/view/hiruu-queen-bot/home` }, { quoted: m })
 		result = fs.readFileSync(`./GojoMedia/vn/info.mp3`)
-		GojoMdNx.sendMessage(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
+		GojoMdNx.sendAudio(m.chat, {audio: result, minetype: 'audio/mp4' , ptt: true}, {quoted: m})
 	}
                     break
                      case 'alive': case 'bot': case 'hiruu bot': {
